@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ html {
+  --text-color:#FFFFFF;
+  --primary-color:#ffffff;
+  --primary-color-dark:#ffffff;
+}
+
+h1 {
+  margin-top: 18px;
+  margin-bottom:15px;
+  }
+  
+.text {
+  font-weight: 700;
+  font-size: 27px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius:8px;
+  padding: 10px   0;
+}
+
+body {
+  background: var(--bg-color);
+  color:var(--text-color);
+  font-family: 'Quicksand', sans-serif; 
+}
+
+.container {
+  text-align:center;
+  width: 300px;
+  margin: 60px auto;   
+}
+
+/*img {
+  width: 50%;
+}*/
+
+img.avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 3.8px;
+  border: var(--text-color) solid 3px;
+}
+
+.username {
+  font-family: 'Quicksand', sans-serif;;
+  font-weight: 600;
+  opacity:1;
+  font-size:15px;
+  }
+
+li {
+  display: inline-block;
+  }
+
+ul li a {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  color: #ffffff;
+  text-transform: none;
+  font-size:16px;
+  padding: 5px 5px;
+  margin-top:40px;  
+  margin-bottom: 28px;
+  border-radius:2px;
+ 
+}
+
+ui li a:hover {
+  background: var(--primary-color-dark);
+}
+
+footer {
+  margin-bottom:10px; 
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: var(--primary-color-dark);
+}
+.gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg,#513252,#7A4069, #CA4E79, #FFC18E);
+  background-size: 150% 150%;
+  animation: colors 20s ease infinite;
+}
+
+@keyframes colors {
+  0%{
+    background-position: 0% 50%;
+  } 
+
+  50%{
+    background-position: 100% 50%;
+  }
+
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+svg{
+  display:inline-block;
+  font-size:inherit;
+  height: 3em;
+  overflow:visible;
+  vertical-align: -.125em;
+  }
+
+
